@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - АвтоДоктор</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dark-theme.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.svg" alt="АвтоДоктор">
+                </a>
+                
+                <nav class="nav">
+                    <button class="mobile-menu-toggle" aria-label="Меню">☰</button>
+                    <ul class="nav-menu">
+                        <li class="dropdown">
+                            <a href="#">Сервис ▼</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Выхлопная система</a></li>
+                                <li><a href="#">Двигатель</a></li>
+                                <li><a href="#">Диагностика автомобиля</a></li>
+                                <li><a href="#">Замена жидкостей</a></li>
+                                <li><a href="#">Кондиционеры и отопление</a></li>
+                                <li><a href="#">Кузовной ремонт и покраска</a></li>
+                                <li><a href="#">Подвеска</a></li>
+                                <li><a href="#">Рулевое управление</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="feedback.html">Рекомендации</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="#">Магазин</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                    
+                    <div class="search-box">
+                        <input type="search" class="search-input" placeholder="Поиск...">
+                        <button class="search-btn" aria-label="Поиск">🔍</button>
+                    </div>
+                    
+                    <a href="lk.html" class="lk-icon" aria-label="Личный кабинет">👤</a>
+                </nav>
+                
+                <form class="login-form" action="#" method="post">
+                    <input type="tel" placeholder="Телефон" required>
+                    <input type="password" placeholder="Пароль" required>
+                    <button type="submit" class="btn">Войти</button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <!-- Баннер -->
+    <section class="banner">
+        <div class="container">
+            <div class="banner-content">
+                <h1>Связаться с нами</h1>
+                <p style="font-size: 1.3em; margin-top: 20px;">Мы всегда рады помочь вам</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Форма обратной связи -->
+    <section class="section">
+        <div class="container">
+            <div class="grid grid-2" style="align-items: start; gap: 50px;">
+                <div>
+                    <h2 class="section-title" style="text-align: left; margin-bottom: 30px;">Напишите нам</h2>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="contact-name">Имя *</label>
+                            <input type="text" id="contact-name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-email">Email *</label>
+                            <input type="email" id="contact-email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-phone">Телефон *</label>
+                            <input type="tel" id="contact-phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-message">Сообщение *</label>
+                            <textarea id="contact-message" name="message" rows="8" required></textarea>
+                        </div>
+                        <button type="submit" class="btn" style="width: 100%;">Отправить</button>
+                    </form>
+                </div>
+                
+                <div>
+                    <h2 class="section-title" style="text-align: left; margin-bottom: 30px;">Контактная информация</h2>
+                    <div class="card" style="margin-bottom: 20px;">
+                        <h3 style="margin-bottom: 15px;">Телефоны</h3>
+                        <p style="margin-bottom: 10px;"><strong>Телефон:</strong> (415) 347-3160</p>
+                        <p style="margin-bottom: 10px;"><strong>Мобильный:</strong> 02 562-958</p>
+                        <p><strong>Факс:</strong> 02 562-95</p>
+                    </div>
+                    
+                    <div class="card" style="margin-bottom: 20px;">
+                        <h3 style="margin-bottom: 15px;">Email</h3>
+                        <p><a href="mailto:info@doc-auto.ru" style="color: var(--primary-color);">info@doc-auto.ru</a></p>
+                    </div>
+                    
+                    <div class="card">
+                        <h3 style="margin-bottom: 15px;">Часы работы</h3>
+                        <p style="margin-bottom: 10px;"><strong>Будни:</strong> 05:00 – 22:00</p>
+                        <p style="margin-bottom: 10px;"><strong>Суббота:</strong> 10:00 – 20:00</p>
+                        <p><strong>Воскресенье:</strong> 10:00 – 18:00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>О нас</h3>
+                    <p>Автосервис предоставляет надежные услуги по техническому обслуживанию автомобилей всех размеров и производителей с 2002 года.</p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook">f</a>
+                        <a href="#" aria-label="VK">в</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="Telegram">✈</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Навигация</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="#">Часто задаваемые вопросы</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                        <li><a href="#">Цены</a></li>
+                        <li><a href="#">Блог</a></li>
+                        <li><a href="#">Конфиденциальность</a></li>
+                        <li><a href="#">Ресурсы</a></li>
+                        <li><a href="#">Карта сайта</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Свяжитесь с нами</h3>
+                    <p>Email: <a href="mailto:info@doc-auto.ru" style="color: var(--footer-text);">info@doc-auto.ru</a></p>
+                    <p>Телефон: (415) 347-3160</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Подписка на рассылку</h3>
+                    <p>Подпишитесь на нашу рассылку, чтобы получать новости и специальные предложения.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Ваш email" required>
+                        <button type="submit" class="btn">Подписаться</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 АвтоДоктор. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+

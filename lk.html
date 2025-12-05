@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет - АвтоДоктор</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dark-theme.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.svg" alt="АвтоДоктор">
+                </a>
+                
+                <nav class="nav">
+                    <button class="mobile-menu-toggle" aria-label="Меню">☰</button>
+                    <ul class="nav-menu">
+                        <li class="dropdown">
+                            <a href="#">Сервис ▼</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Выхлопная система</a></li>
+                                <li><a href="#">Двигатель</a></li>
+                                <li><a href="#">Диагностика автомобиля</a></li>
+                                <li><a href="#">Замена жидкостей</a></li>
+                                <li><a href="#">Кондиционеры и отопление</a></li>
+                                <li><a href="#">Кузовной ремонт и покраска</a></li>
+                                <li><a href="#">Подвеска</a></li>
+                                <li><a href="#">Рулевое управление</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="feedback.html">Рекомендации</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="#">Магазин</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                    
+                    <div class="search-box">
+                        <input type="search" class="search-input" placeholder="Поиск...">
+                        <button class="search-btn" aria-label="Поиск">🔍</button>
+                    </div>
+                    
+                    <a href="lk.html" class="lk-icon" aria-label="Личный кабинет">👤</a>
+                </nav>
+                
+                <form class="login-form" action="#" method="post">
+                    <input type="tel" placeholder="Телефон" required>
+                    <input type="password" placeholder="Пароль" required>
+                    <button type="submit" class="btn">Войти</button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <!-- Баннер -->
+    <section class="banner">
+        <div class="container">
+            <div class="banner-content">
+                <h1>Личный кабинет</h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- Информационное сообщение -->
+    <section class="section">
+        <div class="container">
+            <div class="card" style="background-color: var(--primary-color); color: white; text-align: center; padding: 20px; margin-bottom: 40px;">
+                <p style="font-size: 1.1em; margin: 0;">Для участия в наших акциях и спецпредложениях, пожалуйста, заполните всю информацию в личном кабинете</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Информация о клиенте -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title" style="text-align: left; margin-bottom: 30px;">Информация о клиенте</h2>
+            <form class="user-info-form">
+                <div class="grid grid-2">
+                    <div class="form-group">
+                        <label for="lastname">Фамилия *</label>
+                        <input type="text" id="lastname" name="lastname" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="firstname">Имя *</label>
+                        <input type="text" id="firstname" name="firstname" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="middlename">Отчество</label>
+                        <input type="text" id="middlename" name="middlename">
+                    </div>
+                    <div class="form-group">
+                        <label for="birthdate">Дата рождения *</label>
+                        <input type="date" id="birthdate" name="birthdate" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="city">Город проживания *</label>
+                        <input type="text" id="city" name="city" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="user-phone">Телефон *</label>
+                        <input type="tel" id="user-phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="user-email">Электронная почта *</label>
+                        <input type="email" id="user-email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="photo">Фото</label>
+                        <input type="file" id="photo" name="photo" accept="image/*">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Установить пароль</label>
+                        <input type="password" id="password" name="password">
+                    </div>
+                    <div class="form-group">
+                        <label for="password-repeat">Повторить пароль</label>
+                        <input type="password" id="password-repeat" name="password-repeat">
+                    </div>
+                </div>
+                <div class="checkbox-group" style="margin-top: 20px;">
+                    <input type="checkbox" id="data-consent" name="data-consent" required>
+                    <label for="data-consent">Согласен на обработку персональных данных *</label>
+                </div>
+                <button type="submit" class="btn" style="width: 100%; margin-top: 30px;">Обновить данные пользователя</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Транспортные средства -->
+    <section class="section" style="background-color: var(--bg-secondary);">
+        <div class="container">
+            <h2 class="section-title" style="text-align: left; margin-bottom: 30px;">Транспортные средства</h2>
+            <form class="vehicle-form">
+                <div class="grid grid-2">
+                    <div class="form-group">
+                        <label for="vehicle-brand">Марка транспортного средства *</label>
+                        <input type="text" id="vehicle-brand" name="vehicle-brand" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="vehicle-model">Модель транспортного средства *</label>
+                        <input type="text" id="vehicle-model" name="vehicle-model" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="vin">VIN номер ТС *</label>
+                        <input type="text" id="vin" name="vin" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="reg-number">Регистрационный номер ТС *</label>
+                        <input type="text" id="reg-number" name="reg-number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="vehicle-year">Год выпуска ТС *</label>
+                        <input type="number" id="vehicle-year" name="vehicle-year" min="1900" max="2025" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="vehicle-photo">Фотография ТС</label>
+                        <input type="file" id="vehicle-photo" name="vehicle-photo" accept="image/*">
+                    </div>
+                </div>
+                <button type="submit" class="btn" style="width: 100%; margin-top: 20px;">Добавить автомобиль</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- История ремонта -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title" style="text-align: left; margin-bottom: 30px;">История ремонта</h2>
+            <div style="overflow-x: auto;">
+                <table style="width: 100%; border-collapse: collapse; background: var(--bg-secondary); border-radius: 10px; overflow: hidden;">
+                    <thead>
+                        <tr style="background: var(--primary-color); color: white;">
+                            <th style="padding: 15px; text-align: left;">Марка</th>
+                            <th style="padding: 15px; text-align: left;">Модель</th>
+                            <th style="padding: 15px; text-align: left;">VIN</th>
+                            <th style="padding: 15px; text-align: left;">Рег. номер</th>
+                            <th style="padding: 15px; text-align: left;">Год</th>
+                            <th style="padding: 15px; text-align: left;">Услуга</th>
+                            <th style="padding: 15px; text-align: left;">Дата</th>
+                            <th style="padding: 15px; text-align: left;">Стоимость</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="border-bottom: 1px solid var(--border-color);">
+                            <td style="padding: 15px;">Toyota</td>
+                            <td style="padding: 15px;">Camry</td>
+                            <td style="padding: 15px;">JT2BF28K...</td>
+                            <td style="padding: 15px;">А123БВ777</td>
+                            <td style="padding: 15px;">2020</td>
+                            <td style="padding: 15px;">Замена масла</td>
+                            <td style="padding: 15px;">15.03.2025</td>
+                            <td style="padding: 15px;">2 500 ₽</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid var(--border-color);">
+                            <td style="padding: 15px;">Honda</td>
+                            <td style="padding: 15px;">Civic</td>
+                            <td style="padding: 15px;">19XFC2F5...</td>
+                            <td style="padding: 15px;">В456ГД123</td>
+                            <td style="padding: 15px;">2019</td>
+                            <td style="padding: 15px;">Диагностика</td>
+                            <td style="padding: 15px;">10.03.2025</td>
+                            <td style="padding: 15px;">1 500 ₽</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>О нас</h3>
+                    <p>Автосервис предоставляет надежные услуги по техническому обслуживанию автомобилей всех размеров и производителей с 2002 года.</p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook">f</a>
+                        <a href="#" aria-label="VK">в</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="Telegram">✈</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Навигация</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="#">Часто задаваемые вопросы</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                        <li><a href="#">Цены</a></li>
+                        <li><a href="#">Блог</a></li>
+                        <li><a href="#">Конфиденциальность</a></li>
+                        <li><a href="#">Ресурсы</a></li>
+                        <li><a href="#">Карта сайта</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Свяжитесь с нами</h3>
+                    <p>Email: <a href="mailto:info@doc-auto.ru" style="color: var(--footer-text);">info@doc-auto.ru</a></p>
+                    <p>Телефон: (415) 347-3160</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Подписка на рассылку</h3>
+                    <p>Подпишитесь на нашу рассылку, чтобы получать новости и специальные предложения.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Ваш email" required>
+                        <button type="submit" class="btn">Подписаться</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 АвтоДоктор. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+

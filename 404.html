@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Страница не найдена - АвтоДоктор</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dark-theme.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.svg" alt="АвтоДоктор">
+                </a>
+                
+                <nav class="nav">
+                    <button class="mobile-menu-toggle" aria-label="Меню">☰</button>
+                    <ul class="nav-menu">
+                        <li class="dropdown">
+                            <a href="#">Сервис ▼</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Выхлопная система</a></li>
+                                <li><a href="#">Двигатель</a></li>
+                                <li><a href="#">Диагностика автомобиля</a></li>
+                                <li><a href="#">Замена жидкостей</a></li>
+                                <li><a href="#">Кондиционеры и отопление</a></li>
+                                <li><a href="#">Кузовной ремонт и покраска</a></li>
+                                <li><a href="#">Подвеска</a></li>
+                                <li><a href="#">Рулевое управление</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="feedback.html">Рекомендации</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="#">Магазин</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                    
+                    <div class="search-box">
+                        <input type="search" class="search-input" placeholder="Поиск...">
+                        <button class="search-btn" aria-label="Поиск">🔍</button>
+                    </div>
+                    
+                    <a href="lk.html" class="lk-icon" aria-label="Личный кабинет">👤</a>
+                </nav>
+                
+                <form class="login-form" action="#" method="post">
+                    <input type="tel" placeholder="Телефон" required>
+                    <input type="password" placeholder="Пароль" required>
+                    <button type="submit" class="btn">Войти</button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <!-- Страница 404 -->
+    <section class="section" style="min-height: 60vh; display: flex; align-items: center;">
+        <div class="container">
+            <div style="text-align: center; max-width: 600px; margin: 0 auto;">
+                <div style="font-size: 120px; font-weight: bold; color: var(--primary-color); margin-bottom: 20px; line-height: 1;">404</div>
+                <h1 style="font-size: 2.5em; margin-bottom: 20px;">Страница не найдена</h1>
+                <p style="font-size: 1.2em; color: var(--text-secondary); margin-bottom: 40px;">
+                    К сожалению, запрашиваемая страница не существует или была перемещена.
+                </p>
+                <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+                    <a href="index.html" class="btn">На главную</a>
+                    <a href="contacts.html" class="btn btn-secondary">Связаться с нами</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>О нас</h3>
+                    <p>Автосервис предоставляет надежные услуги по техническому обслуживанию автомобилей всех размеров и производителей с 2002 года.</p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook">f</a>
+                        <a href="#" aria-label="VK">в</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="Telegram">✈</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Навигация</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="#">Часто задаваемые вопросы</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                        <li><a href="#">Цены</a></li>
+                        <li><a href="#">Блог</a></li>
+                        <li><a href="#">Конфиденциальность</a></li>
+                        <li><a href="#">Ресурсы</a></li>
+                        <li><a href="#">Карта сайта</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Свяжитесь с нами</h3>
+                    <p>Email: <a href="mailto:info@doc-auto.ru" style="color: var(--footer-text);">info@doc-auto.ru</a></p>
+                    <p>Телефон: (415) 347-3160</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Подписка на рассылку</h3>
+                    <p>Подпишитесь на нашу рассылку, чтобы получать новости и специальные предложения.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Ваш email" required>
+                        <button type="submit" class="btn">Подписаться</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 АвтоДоктор. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+

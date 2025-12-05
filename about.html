@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О нас - АвтоДоктор</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dark-theme.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.svg" alt="АвтоДоктор">
+                </a>
+                
+                <nav class="nav">
+                    <button class="mobile-menu-toggle" aria-label="Меню">☰</button>
+                    <ul class="nav-menu">
+                        <li class="dropdown">
+                            <a href="#">Сервис ▼</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Выхлопная система</a></li>
+                                <li><a href="#">Двигатель</a></li>
+                                <li><a href="#">Диагностика автомобиля</a></li>
+                                <li><a href="#">Замена жидкостей</a></li>
+                                <li><a href="#">Кондиционеры и отопление</a></li>
+                                <li><a href="#">Кузовной ремонт и покраска</a></li>
+                                <li><a href="#">Подвеска</a></li>
+                                <li><a href="#">Рулевое управление</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="feedback.html">Рекомендации</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="#">Магазин</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                    
+                    <div class="search-box">
+                        <input type="search" class="search-input" placeholder="Поиск...">
+                        <button class="search-btn" aria-label="Поиск">🔍</button>
+                    </div>
+                    
+                    <a href="lk.html" class="lk-icon" aria-label="Личный кабинет">👤</a>
+                </nav>
+                
+                <form class="login-form" action="#" method="post">
+                    <input type="tel" placeholder="Телефон" required>
+                    <input type="password" placeholder="Пароль" required>
+                    <button type="submit" class="btn">Войти</button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <!-- Баннер -->
+    <section class="banner">
+        <div class="container">
+            <div class="banner-content">
+                <h1>О нас</h1>
+                <p style="font-size: 1.3em; margin-top: 20px;">Ваш надежный партнер в обслуживании автомобилей</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Наша короткая история -->
+    <section class="section">
+        <div class="container">
+            <div class="grid grid-2" style="align-items: center; gap: 50px;">
+                <div>
+                    <h2 class="section-title" style="text-align: left; margin-bottom: 30px;">Наша короткая история</h2>
+                    <p style="font-size: 1.1em; line-height: 1.8; margin-bottom: 20px;">
+                        Когда 24 года назад 3 механика собрались вместе, они решили, что их любовь к автомобилям может открыть им новую сферу деятельности! С тех пор Авторемонтная мастерская отремонтировала тысячи новых и ретро-автомобилей...
+                    </p>
+                    <p style="font-size: 1.1em; line-height: 1.8;">
+                        За этот длительный период мы увеличили нашу команду всего с 3 механиков до более чем 200 человек. Кроме того, теперь у нас есть сильная база постоянных клиентов, которым мы всегда выражаем признательность дополнительными бонусами и скидками на будущие услуги!
+                    </p>
+                </div>
+                <div style="text-align: center;">
+                    <div style="width: 100%; height: 400px; background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5em;">
+                        🚗 История компании
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Чем мы отличаемся -->
+    <section class="section" style="background-color: var(--bg-secondary);">
+        <div class="container">
+            <h2 class="section-title">Чем мы отличаемся от других</h2>
+            <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); margin-top: 50px;">
+                <div class="card" style="text-align: center;">
+                    <div style="font-size: 64px; margin-bottom: 20px;">❤️</div>
+                    <h3>Клиентоориентированный сервис</h3>
+                    <p style="margin-top: 15px; color: var(--text-secondary);">
+                        Мы ценим оказанное нам доверие, и наши постоянные клиенты, которые возвращаются к нам снова и снова, всегда могут рассчитывать на некоторую благодарность от нас, например, скидку на будущие услуги или подарок.
+                    </p>
+                </div>
+                
+                <div class="card" style="text-align: center;">
+                    <div style="font-size: 64px; margin-bottom: 20px;">👨‍🔧</div>
+                    <h3>Опытная команда</h3>
+                    <p style="margin-top: 15px; color: var(--text-secondary);">
+                        Когда дело доходит до ремонта или технического осмотра вашей автомеханики или электроники, вся наша команда, вместе взятая, обладает почти столетним практическим опытом.
+                    </p>
+                </div>
+                
+                <div class="card" style="text-align: center;">
+                    <div style="font-size: 64px; margin-bottom: 20px;">💰</div>
+                    <h3>Доступные цены</h3>
+                    <p style="margin-top: 15px; color: var(--text-secondary);">
+                        Мы стремимся сделать наши услуги максимально доступными. Именно поэтому мы сокращаем все основные коммерческие расходы.
+                    </p>
+                </div>
+                
+                <div class="card" style="text-align: center;">
+                    <div style="font-size: 64px; margin-bottom: 20px;">🔧</div>
+                    <h3>Высококачественные автомобильные запчасти</h3>
+                    <p style="margin-top: 15px; color: var(--text-secondary);">
+                        Все автомобильные запчасти, имеющиеся у нас на складе, были приобретены у самых надежных дилеров и производителей.
+                    </p>
+                </div>
+                
+                <div class="card" style="text-align: center;">
+                    <div style="font-size: 64px; margin-bottom: 20px;">⭐</div>
+                    <h3>Гарантия качества</h3>
+                    <p style="margin-top: 15px; color: var(--text-secondary);">
+                        Мы предоставляем гарантию на все виды выполненных работ и используемые запчасти. Ваше спокойствие - наш приоритет.
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Информационный баннер -->
+    <section class="section">
+        <div class="container">
+            <div style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); border-radius: 15px; padding: 60px 40px; text-align: center; color: white;">
+                <h2 style="font-size: 2.5em; margin-bottom: 30px;">ПОЛУЧИТЕ СКИДКУ В размере 10% НА УКАЗАННЫЕ НИЖЕ УСЛУГИ!</h2>
+                <ul style="list-style: none; font-size: 1.3em; margin-bottom: 40px; line-height: 2;">
+                    <li>✓ Плановое техническое обслуживание от производителя</li>
+                    <li>✓ Настройка и ремонт двигателя</li>
+                    <li>✓ Замена жидкостей</li>
+                </ul>
+                <a href="index.html#booking" class="btn btn-secondary" style="font-size: 1.2em; padding: 15px 40px;">Записаться</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>О нас</h3>
+                    <p>Автосервис предоставляет надежные услуги по техническому обслуживанию автомобилей всех размеров и производителей с 2002 года.</p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook">f</a>
+                        <a href="#" aria-label="VK">в</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="Telegram">✈</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Навигация</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="#">Часто задаваемые вопросы</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                        <li><a href="#">Цены</a></li>
+                        <li><a href="#">Блог</a></li>
+                        <li><a href="#">Конфиденциальность</a></li>
+                        <li><a href="#">Ресурсы</a></li>
+                        <li><a href="#">Карта сайта</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Свяжитесь с нами</h3>
+                    <p>Email: <a href="mailto:info@doc-auto.ru" style="color: var(--footer-text);">info@doc-auto.ru</a></p>
+                    <p>Телефон: (415) 347-3160</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Подписка на рассылку</h3>
+                    <p>Подпишитесь на нашу рассылку, чтобы получать новости и специальные предложения.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Ваш email" required>
+                        <button type="submit" class="btn">Подписаться</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 АвтоДоктор. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+

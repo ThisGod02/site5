@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>АвтоДоктор - Ваш автомобиль наша забота</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/light-theme.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.svg" alt="АвтоДоктор">
+                </a>
+                
+                <nav class="nav">
+                    <button class="mobile-menu-toggle" aria-label="Меню">☰</button>
+                    <ul class="nav-menu">
+                        <li class="dropdown">
+                            <a href="#">Сервис ▼</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Выхлопная система</a></li>
+                                <li><a href="#">Двигатель</a></li>
+                                <li><a href="#">Диагностика автомобиля</a></li>
+                                <li><a href="#">Замена жидкостей</a></li>
+                                <li><a href="#">Кондиционеры и отопление</a></li>
+                                <li><a href="#">Кузовной ремонт и покраска</a></li>
+                                <li><a href="#">Подвеска</a></li>
+                                <li><a href="#">Рулевое управление</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="feedback.html">Рекомендации</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="#">Магазин</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                    
+                    <div class="search-box">
+                        <input type="search" class="search-input" placeholder="Поиск...">
+                        <button class="search-btn" aria-label="Поиск">🔍</button>
+                    </div>
+                    
+                    <button class="theme-toggle" aria-label="Переключить тему" onclick="window.location.href='index-dark.html'">🌙</button>
+                    
+                    <a href="lk.html" class="lk-icon" aria-label="Личный кабинет">👤</a>
+                </nav>
+                
+                <form class="login-form" action="#" method="post">
+                    <input type="tel" placeholder="Телефон" required>
+                    <input type="password" placeholder="Пароль" required>
+                    <button type="submit" class="btn">Войти</button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <!-- Баннер -->
+    <section class="banner">
+        <div class="container">
+            <div class="banner-content">
+                <h1>Ваш автомобиль — наша забота</h1>
+                <div class="promotion">
+                    Бесплатная замена масла с 15 марта. Только при наличии цифры "5" на вашем номерном знаке.
+                </div>
+                <a href="#booking" class="btn btn-secondary">Записаться</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Информационная секция -->
+    <section class="section">
+        <div class="container">
+            <div class="grid grid-3">
+                <div class="card">
+                    <h3>Наши преимущества</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li>✓ Бесплатная диагностика и проверка тормозов</li>
+                        <li>✓ Сертифицированные услуги по ремонту</li>
+                        <li>✓ Оценка ремонта по справедливой цене</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h3>Часы работы</h3>
+                    <p><strong>Будни:</strong> 05:00 – 22:00</p>
+                    <p><strong>Суббота:</strong> 10:00 – 20:00</p>
+                    <p><strong>Воскресенье:</strong> 10:00 – 18:00</p>
+                </div>
+                
+                <div class="card">
+                    <h3>Связаться с нами</h3>
+                    <p>Телефон: (415) 347-3160</p>
+                    <p>Мобильный: 02 562-958</p>
+                    <p>Факс: 02 562-95</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция записи на сервис -->
+    <section id="booking" class="section" style="background-color: var(--bg-secondary);">
+        <div class="container">
+            <h2 class="section-title">Запись на сервис</h2>
+            <form class="booking-form" style="max-width: 800px; margin: 0 auto;">
+                <div class="grid grid-2">
+                    <div class="form-group">
+                        <label for="brand">Марка *</label>
+                        <input type="text" id="brand" name="brand" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="model">Модель *</label>
+                        <input type="text" id="model" name="model" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="city">Город *</label>
+                        <input type="text" id="city" name="city" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Имя *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Телефон *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Желаемая дата *</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="issue">Описание неисправности автомобиля</label>
+                    <textarea id="issue" name="issue" rows="4"></textarea>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="consent" name="consent" required>
+                    <label for="consent">Согласен на обработку персональных данных *</label>
+                </div>
+                <button type="submit" class="btn" style="width: 100%; margin-top: 20px;">Записаться</button>
+                <p style="margin-top: 15px; font-size: 0.9em; color: var(--text-secondary); text-align: center;">
+                    После подачи заявки с Вами свяжется менеджер для уточнения деталей. В течении нескольких минут Вам поступит СМС-сообщение с временным паролем от личного кабинета. Установить пароль Вы сможете в личном кабинете.
+                </p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Секция услуг по ремонту -->
+    <section class="section">
+        <div class="container">
+            <div class="grid grid-2" style="align-items: center; margin-bottom: 40px;">
+                <div>
+                    <h2 class="section-title" style="text-align: left; margin-bottom: 20px;">Услуги по ремонту транспортных средств</h2>
+                    <p style="font-size: 1.1em; line-height: 1.8; margin-bottom: 30px;">
+                        Мы являемся одной из ведущих автомастерских, обслуживающих клиентов по всему региону. Все ремонтные услуги выполняются высококвалифицированными механиками.
+                    </p>
+                    <a href="repair.html" class="btn">Все услуги</a>
+                </div>
+                <div style="text-align: center;">
+                    <div style="width: 100%; height: 300px; background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5em;">
+                        🚗 Изображение автосервиса
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grid grid-4">
+                <div class="card" style="text-align: center;">
+                    <div style="font-size: 48px; margin-bottom: 15px;">🔧</div>
+                    <h3>Двигатель</h3>
+                </div>
+                <div class="card" style="text-align: center;">
+                    <div style="font-size: 48px; margin-bottom: 15px;">🔍</div>
+                    <h3>Диагностика</h3>
+                </div>
+                <div class="card" style="text-align: center;">
+                    <div style="font-size: 48px; margin-bottom: 15px;">💧</div>
+                    <h3>Замена жидкостей</h3>
+                </div>
+                <div class="card" style="text-align: center;">
+                    <div style="font-size: 48px; margin-bottom: 15px;">🎨</div>
+                    <h3>Покраска</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция "О нас" -->
+    <section class="section" style="background-color: var(--bg-secondary);">
+        <div class="container">
+            <h2 class="section-title">Мы работаем с 2002 года</h2>
+            <p class="section-subtitle" style="max-width: 900px; margin: 0 auto 40px;">
+                Мы предлагаем полный спектр услуг владельцам транспортных средств. Наши профессионалы знают, как справиться с широким спектром ремонта авто. Наши механики позаботятся о том, чтобы Ваш автомобиль работал наилучшим образом еще до того, как покинет нашу ремонтную мастерскую. Мы знаем, как ухаживать за Вашим автомобилем.
+            </p>
+            <div style="text-align: center; margin-bottom: 50px;">
+                <a href="repair.html" class="btn">Все услуги</a>
+            </div>
+            
+            <!-- Слайдер отзывов -->
+            <div class="testimonials-slider" style="max-width: 1000px; margin: 0 auto;">
+                <div class="testimonial-slide active">
+                    <div class="card" style="text-align: center;">
+                        <img src="https://via.placeholder.com/100" alt="Клиент" style="width: 100px; height: 100px; border-radius: 50%; margin: 0 auto 20px; display: block;">
+                        <h3>Иван Петров</h3>
+                        <p style="color: var(--text-secondary); margin-bottom: 15px;">Москва</p>
+                        <p>"Отличный сервис! Быстро и качественно отремонтировали мой автомобиль. Рекомендую!"</p>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="card" style="text-align: center;">
+                        <img src="https://via.placeholder.com/100" alt="Клиент" style="width: 100px; height: 100px; border-radius: 50%; margin: 0 auto 20px; display: block;">
+                        <h3>Мария Сидорова</h3>
+                        <p style="color: var(--text-secondary); margin-bottom: 15px;">Санкт-Петербург</p>
+                        <p>"Профессиональные механики, честные цены. Автомобиль работает как новый!"</p>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="card" style="text-align: center;">
+                        <img src="https://via.placeholder.com/100" alt="Клиент" style="width: 100px; height: 100px; border-radius: 50%; margin: 0 auto 20px; display: block;">
+                        <h3>Алексей Козлов</h3>
+                        <p style="color: var(--text-secondary); margin-bottom: 15px;">Казань</p>
+                        <p>"Лучший автосервис в городе! Всегда приятно иметь дело с профессионалами."</p>
+                    </div>
+                </div>
+                
+                <div style="display: flex; justify-content: center; gap: 10px; margin-top: 30px;">
+                    <button class="slider-prev btn" style="padding: 10px 20px;">‹</button>
+                    <div style="display: flex; gap: 10px; align-items: center;">
+                        <button class="slider-indicator active" style="width: 12px; height: 12px; border-radius: 50%; border: none; background: var(--primary-color); cursor: pointer;"></button>
+                        <button class="slider-indicator" style="width: 12px; height: 12px; border-radius: 50%; border: none; background: var(--border-color); cursor: pointer;"></button>
+                        <button class="slider-indicator" style="width: 12px; height: 12px; border-radius: 50%; border: none; background: var(--border-color); cursor: pointer;"></button>
+                    </div>
+                    <button class="slider-next btn" style="padding: 10px 20px;">›</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Популярные товары -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Популярные товары</h2>
+            <div class="grid grid-3">
+                <div class="card">
+                    <div style="width: 100%; height: 200px; background: var(--bg-secondary); border-radius: 5px; margin-bottom: 15px; display: flex; align-items: center; justify-content: center;">🛞</div>
+                    <h3>Моторное масло</h3>
+                    <p style="font-size: 1.5em; color: var(--primary-color); font-weight: bold; margin: 15px 0;">2 500 ₽</p>
+                    <button class="btn" style="width: 100%;">В корзину</button>
+                </div>
+                <div class="card">
+                    <div style="width: 100%; height: 200px; background: var(--bg-secondary); border-radius: 5px; margin-bottom: 15px; display: flex; align-items: center; justify-content: center;">🔋</div>
+                    <h3>Аккумулятор</h3>
+                    <p style="font-size: 1.5em; color: var(--primary-color); font-weight: bold; margin: 15px 0;">8 900 ₽</p>
+                    <button class="btn" style="width: 100%;">В корзину</button>
+                </div>
+                <div class="card">
+                    <div style="width: 100%; height: 200px; background: var(--bg-secondary); border-radius: 5px; margin-bottom: 15px; display: flex; align-items: center; justify-content: center;">🛢️</div>
+                    <h3>Тормозная жидкость</h3>
+                    <p style="font-size: 1.5em; color: var(--primary-color); font-weight: bold; margin: 15px 0;">850 ₽</p>
+                    <button class="btn" style="width: 100%;">В корзину</button>
+                </div>
+                <div class="card">
+                    <div style="width: 100%; height: 200px; background: var(--bg-secondary); border-radius: 5px; margin-bottom: 15px; display: flex; align-items: center; justify-content: center;">⚙️</div>
+                    <h3>Фильтр воздушный</h3>
+                    <p style="font-size: 1.5em; color: var(--primary-color); font-weight: bold; margin: 15px 0;">1 200 ₽</p>
+                    <button class="btn" style="width: 100%;">В корзину</button>
+                </div>
+                <div class="card">
+                    <div style="width: 100%; height: 200px; background: var(--bg-secondary); border-radius: 5px; margin-bottom: 15px; display: flex; align-items: center; justify-content: center;">💡</div>
+                    <h3>Лампы фар</h3>
+                    <p style="font-size: 1.5em; color: var(--primary-color); font-weight: bold; margin: 15px 0;">1 800 ₽</p>
+                    <button class="btn" style="width: 100%;">В корзину</button>
+                </div>
+                <div class="card">
+                    <div style="width: 100%; height: 200px; background: var(--bg-secondary); border-radius: 5px; margin-bottom: 15px; display: flex; align-items: center; justify-content: center;">🔄</div>
+                    <h3>Щетки стеклоочистителя</h3>
+                    <p style="font-size: 1.5em; color: var(--primary-color); font-weight: bold; margin: 15px 0;">950 ₽</p>
+                    <button class="btn" style="width: 100%;">В корзину</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Карта -->
+    <section class="section" style="background-color: var(--bg-secondary);">
+        <div class="container">
+            <h2 class="section-title">Наши мастерские</h2>
+            <div style="width: 100%; height: 400px; background: var(--bg-primary); border-radius: 10px; display: flex; align-items: center; justify-content: center; border: 2px solid var(--border-color);">
+                <p style="font-size: 1.2em; color: var(--text-secondary);">🗺️ Карта с расположением сети мастерских</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>О нас</h3>
+                    <p>Автосервис предоставляет надежные услуги по техническому обслуживанию автомобилей всех размеров и производителей с 2002 года.</p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook">f</a>
+                        <a href="#" aria-label="VK">в</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="Telegram">✈</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Навигация</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="#">Часто задаваемые вопросы</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                        <li><a href="#">Цены</a></li>
+                        <li><a href="#">Блог</a></li>
+                        <li><a href="#">Конфиденциальность</a></li>
+                        <li><a href="#">Ресурсы</a></li>
+                        <li><a href="#">Карта сайта</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Свяжитесь с нами</h3>
+                    <p>Email: <a href="mailto:info@doc-auto.ru" style="color: var(--footer-text);">info@doc-auto.ru</a></p>
+                    <p>Телефон: (415) 347-3160</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Подписка на рассылку</h3>
+                    <p>Подпишитесь на нашу рассылку, чтобы получать новости и специальные предложения.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Ваш email" required>
+                        <button type="submit" class="btn">Подписаться</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 АвтоДоктор. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+
