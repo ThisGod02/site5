@@ -159,27 +159,25 @@
                     <a href="repair.html" class="btn">Все услуги</a>
                 </div>
                 <div style="text-align: center;">
-                    <div style="width: 100%; height: 300px; background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5em;">
-                        🚗 Изображение автосервиса
-                    </div>
+                    <img src="images/autoservice.jpg" alt="Автосервис" style="width: 100%; height: 300px; object-fit: cover; border-radius: 10px;">
                 </div>
             </div>
             
             <div class="grid grid-4">
                 <div class="card" style="text-align: center;">
-                    <div style="font-size: 48px; margin-bottom: 15px;">🔧</div>
+                    <img src="images/service-engine.jpg" alt="Двигатель" style="width: 100%; height: 150px; object-fit: cover; border-radius: 10px; margin-bottom: 15px;">
                     <h3>Двигатель</h3>
                 </div>
                 <div class="card" style="text-align: center;">
-                    <div style="font-size: 48px; margin-bottom: 15px;">🔍</div>
+                    <img src="images/service-diagnostic.jpg" alt="Диагностика" style="width: 100%; height: 150px; object-fit: cover; border-radius: 10px; margin-bottom: 15px;">
                     <h3>Диагностика</h3>
                 </div>
                 <div class="card" style="text-align: center;">
-                    <div style="font-size: 48px; margin-bottom: 15px;">💧</div>
+                    <img src="images/service-fluids.jpg" alt="Замена жидкостей" style="width: 100%; height: 150px; object-fit: cover; border-radius: 10px; margin-bottom: 15px;">
                     <h3>Замена жидкостей</h3>
                 </div>
                 <div class="card" style="text-align: center;">
-                    <div style="font-size: 48px; margin-bottom: 15px;">🎨</div>
+                    <img src="images/service-paint.jpg" alt="Покраска" style="width: 100%; height: 150px; object-fit: cover; border-radius: 10px; margin-bottom: 15px;">
                     <h3>Покраска</h3>
                 </div>
             </div>
@@ -201,7 +199,7 @@
             <div class="testimonials-slider" style="max-width: 1000px; margin: 0 auto;">
                 <div class="testimonial-slide active">
                     <div class="card" style="text-align: center;">
-                        <img src="https://via.placeholder.com/100" alt="Клиент" style="width: 100px; height: 100px; border-radius: 50%; margin: 0 auto 20px; display: block;">
+                        <img src="images/client-1.jpg" alt="Иван Петров" style="width: 100px; height: 100px; border-radius: 50%; margin: 0 auto 20px; display: block; object-fit: cover;">
                         <h3>Иван Петров</h3>
                         <p style="color: var(--text-secondary); margin-bottom: 15px;">Москва</p>
                         <p>"Отличный сервис! Быстро и качественно отремонтировали мой автомобиль. Рекомендую!"</p>
@@ -209,7 +207,7 @@
                 </div>
                 <div class="testimonial-slide">
                     <div class="card" style="text-align: center;">
-                        <img src="https://via.placeholder.com/100" alt="Клиент" style="width: 100px; height: 100px; border-radius: 50%; margin: 0 auto 20px; display: block;">
+                        <img src="images/client-2.jpg" alt="Мария Сидорова" style="width: 100px; height: 100px; border-radius: 50%; margin: 0 auto 20px; display: block; object-fit: cover;">
                         <h3>Мария Сидорова</h3>
                         <p style="color: var(--text-secondary); margin-bottom: 15px;">Санкт-Петербург</p>
                         <p>"Профессиональные механики, честные цены. Автомобиль работает как новый!"</p>
@@ -217,7 +215,7 @@
                 </div>
                 <div class="testimonial-slide">
                     <div class="card" style="text-align: center;">
-                        <img src="https://via.placeholder.com/100" alt="Клиент" style="width: 100px; height: 100px; border-radius: 50%; margin: 0 auto 20px; display: block;">
+                        <img src="images/client-3.jpg" alt="Алексей Козлов" style="width: 100px; height: 100px; border-radius: 50%; margin: 0 auto 20px; display: block; object-fit: cover;">
                         <h3>Алексей Козлов</h3>
                         <p style="color: var(--text-secondary); margin-bottom: 15px;">Казань</p>
                         <p>"Лучший автосервис в городе! Всегда приятно иметь дело с профессионалами."</p>
@@ -286,8 +284,9 @@
     <section class="section" style="background-color: var(--bg-secondary);">
         <div class="container">
             <h2 class="section-title">Наши мастерские</h2>
-            <div style="width: 100%; height: 400px; background: var(--bg-primary); border-radius: 10px; display: flex; align-items: center; justify-content: center; border: 2px solid var(--border-color);">
-                <p style="font-size: 1.2em; color: var(--text-secondary);">🗺️ Карта с расположением сети мастерских</p>
+            <div style="width: 100%; height: 400px; background: var(--bg-primary); border-radius: 10px; display: flex; align-items: center; justify-content: center; border: 2px solid var(--border-color); position: relative; overflow: hidden;">
+                <img src="images/map.jpg" alt="Карта расположения мастерских" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0;" onerror="this.style.display='none';">
+                <p style="font-size: 1.2em; color: var(--text-secondary); position: relative; z-index: 1; background: rgba(255,255,255,0.9); padding: 20px; border-radius: 10px;">🗺️ Карта с расположением сети мастерских</p>
             </div>
         </div>
     </section>
